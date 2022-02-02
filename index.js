@@ -21,7 +21,7 @@ async function saveData(data) {
     console.log(res2);
 }
 
-const stackOverFlowScrapper = new Scraper({pageLimitForSeedUrls: 2, concurrenyLimit: 5, delay: 200 });
+const stackOverFlowScrapper = new Scraper({pageLimitForSeedUrls: 10, concurrenyLimit: 5, delay: 200 });
 stackOverFlowScrapper.start();
 
 // setInterval(()=>{

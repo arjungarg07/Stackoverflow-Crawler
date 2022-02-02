@@ -32,9 +32,10 @@ class Scraper {
         this.frequencyCount = new Map();
         this.scrapedData = [];
         // this.requestCount = 0;
+        // Uncomment the underlying code to see the number of concurrent requests at an interval of 500 ms
         // setInterval(() => {
-        //   console.log(this.a);
-        // }, 200);
+        //   console.log(this.requestCount);
+        // }, 500);
     }
 
     getAllData(){
@@ -144,7 +145,7 @@ class Scraper {
                 this.requestCount--;
                 this.fetchAndSaveDataFromHomePage(response);
             }
-            // await this.sleep(this.delay + this.getRandomArbitrary(100, 500));
+            // await this.sleep(this.delay + this.getRandomArbitrary(100, 500)); // uncomment it to simulate human behaviour
             this.recursiveFetch();
 
             return;
