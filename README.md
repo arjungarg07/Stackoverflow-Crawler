@@ -8,7 +8,8 @@ Youtube Link: https://www.youtube.com/watch?v=H6zzndSSEQM
 DriveLink: https://drive.google.com/file/d/16vcM-ti90u2en9Cb0Lo47Rs5ClucN_NQ/view?usp=sharing
 
 ## Features
-- Flexibility to **choose the concurrency limit** of the API requests by the user.
+- Implemented **concurrency limit** of API requests.
+- Flexibility to change the **concurrency limit** of the API requests.
 - Flexibility to **choose the page limit for seed Urls** of the stackoverflow homepage by the user.
 - Scraping **total # of upvotes** and **total # of answers** for every question.
 - Feature to **delay API requests** in order to **prevent the IP address** from getting blocked by simulating human behavior.
