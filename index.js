@@ -10,15 +10,15 @@ const { commonQuery } = require('./db');
 async function saveData(data) {
     const query1 = 'CREATE DATABASE IF NOT EXISTS db_stackoverflow';
     const query2 = 'CREATE TABLE IF NOT EXISTS db_stackoverflow.stackoverflow_data (title VARCHAR(255), upvote VARCHAR(10), answers INT, url VARCHAR(255), freq INT)';
-    const res = await commonQuery(query1);
-    const res2 = await commonQuery(query2);
+    const query1result = await commonQuery(query1);
+    const query2result = await commonQuery(query2);
+    console.log(query1result);
+    console.log(query2result);
     for (let i = 0; i < data.length; i++) {
-        const query = 'INSERT INTO db_stackoverflow.stackoverflow_data (title, upvote, answers, url, freq) VALUES (?, ?, ?, ?, ?)';
-        const res = await commonQuery(query, [data[i].title, data[i].upvote, data[i].totalAnswers, data[i].url, data[i].freq]);
-        console.log(res);
+        const insertQuery = 'INSERT INTO db_stackoverflow.stackoverflow_data (title, upvote, answers, url, freq) VALUES (?, ?, ?, ?, ?)';
+        const result = await commonQuery(insertQuery, [data[i].title, data[i].upvote, data[i].totalAnswers, data[i].url, data[i].freq]);
+        console.log(result);
     }
-    console.log(res);
-    console.log(res2);
 }
 
 const stackOverFlowScrapper = new Scraper({pageLimitForSeedUrls: 20, concurrenyLimit: 5, delay: 200 });
