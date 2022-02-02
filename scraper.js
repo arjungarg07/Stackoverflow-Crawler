@@ -61,7 +61,7 @@ class Scraper {
         });
     }
 
-    fetchAndSaveDataFromQuestionsPage(response){
+    fetchAndSaveDataFromQuestionsPage(response,url){
         try {
             if (response) {
               const $ = cheerio.load(response.data);
@@ -91,7 +91,7 @@ class Scraper {
               });
               this.checkAndSaveSeedUrl(linkedArray);
 
-              this.scrapedData.push({ title, upvote, totalAnswers });
+              this.scrapedData.push({ title, upvote, totalAnswers, url});
               return;
             }
           } catch (err) {
@@ -137,7 +137,7 @@ class Scraper {
                 const response = await axios.get(currentUrl);
                 this.requestCount--;
                 // console.log(response, "*************");
-                this.fetchAndSaveDataFromQuestionsPage(response);
+                this.fetchAndSaveDataFromQuestionsPage(response,currentUrl);
             } else {
                 this.requestCount++;
                 const response = await axios.get(currentUrl);
