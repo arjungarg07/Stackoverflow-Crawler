@@ -1,6 +1,6 @@
 # GrowthSchool Assignment
 
-Hey there, this is a Node.js based recursive question crawler, which harvests all questions on Stack Overflow with their encountered frequencies and stores them in the MySQL database.
+Hey there, This is a Node.js based recursive question crawler, which harvests all questions on Stack Overflow with their encountered frequencies and stores them in the MySQL database and in the CSV file as well.
 
 ## Demo Submission
 Youtube Link: https://www.youtube.com/watch?v=H6zzndSSEQM 
@@ -16,6 +16,9 @@ DriveLink: https://drive.google.com/file/d/16vcM-ti90u2en9Cb0Lo47Rs5ClucN_NQ/vie
 - Implemented a **trigger** to dump the data in a **CSV file** when the **user kills the script**.
 - Implemented a trigger to save the data in the **MySQL database** when the **user kills the script**.
 - Kept the code **modular** and as understandable following best naming conventions.
+- Clean, Readable, Easy to follow code.
+- Used cheerio or similar library for HTML parsing.
+- Solution is **asynchronous** in nature.
 
 ## TechStack
 - Javascript
