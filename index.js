@@ -36,8 +36,8 @@ async function exitHandler(options, exitCode) {
         if(data && data.length){
             const csv = parse(data);
             writeStream.write(csv);
+            await saveData(data); // comment this line if you don't want to save data to database or having trouble connecting to database
         }
-        await saveData(data); // comment this line if you don't want to save data to database or having trouble connecting to database
     }
     if (options.exit) process.exit();
 }
