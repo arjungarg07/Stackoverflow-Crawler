@@ -3,7 +3,7 @@ const cheerio = require("cheerio");
 
 class Scraper {
     populateSeedUrls(){
-        for(let i = 0;i<this.pageLimitForSeedUrls;i++){
+        for(let i = 1;i<this.pageLimitForSeedUrls;i++){
             this.seedUrls.push(`https://stackoverflow.com/questions?tab=newest&page=${i}`);
         }
     }
