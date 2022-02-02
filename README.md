@@ -29,6 +29,11 @@ DriveLink: https://drive.google.com/file/d/16vcM-ti90u2en9Cb0Lo47Rs5ClucN_NQ/vie
 ## Note
 Please comment line if you are not able to connect to your local MySQL database, the script will save the data in the CSV file only.
 https://github.com/arjungarg07/growthSchoolAssignment/blob/a0ff5e782b1f16e14d2b088d1274ffa31c1d626b/index.js#L39
+
+## WorkFlow
+![WorkFlow](https://github.com/arjungarg07/growthSchoolAssignment/blob/main/Flow.png?raw=true)
+<!-- [WorkFlow](https://github.com/arjungarg07/growthSchoolAssignment/blob/main/Flow.png) -->
+
 ## Installation
 
 ```bash
