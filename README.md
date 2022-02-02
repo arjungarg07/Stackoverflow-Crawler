@@ -18,7 +18,7 @@ DriveLink: https://drive.google.com/file/d/16vcM-ti90u2en9Cb0Lo47Rs5ClucN_NQ/vie
 - Implemented a trigger to save the data in the **MySQL database** when the **user kills the script**.
 - Kept the code **modular** and as understandable following best naming conventions.
 - Clean, Readable, Easy to follow code.
-- Used cheerio or similar library for HTML parsing.
+- Used cheerio for HTML parsing.
 - Solution is **asynchronous** in nature.
 
 ## TechStack
