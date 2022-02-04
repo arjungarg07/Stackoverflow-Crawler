@@ -1,11 +1,10 @@
-# GrowthSchool Assignment
+# Stackoverflow Crawler
 
 Hey there, This is a Node.js based recursive question crawler, which harvests all questions on Stack Overflow with their encountered frequencies and stores them in the MySQL database and in the CSV file as well.
 
-## Demo Submission
+## Demo 
 Youtube Link: https://www.youtube.com/watch?v=H6zzndSSEQM 
 
-DriveLink: https://drive.google.com/file/d/16vcM-ti90u2en9Cb0Lo47Rs5ClucN_NQ/view?usp=sharing
 
 ## Features
 - Implemented **concurrency limit** of API requests.
@@ -45,4 +44,3 @@ npm install
 ```bash
 node index.js
 ```
-Linkedin: https://www.linkedin.com/in/arjungarg17/
