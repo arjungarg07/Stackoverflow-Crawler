@@ -27,7 +27,7 @@ Youtube Link: https://www.youtube.com/watch?v=H6zzndSSEQM
 
 ## Note
 Please comment line if you are not able to connect to your local MySQL database, the script will save the data in the CSV file only.
-https://github.com/arjungarg07/growthSchoolAssignment/blob/a0ff5e782b1f16e14d2b088d1274ffa31c1d626b/index.js#L39
+https://github.com/arjungarg07/Stackoverflow-Crawler/blob/bda4c530f1b8d819634eecd89e5a5f1ddd12b765/index.js#L44
 
 ## WorkFlow
 ![WorkFlow](https://github.com/arjungarg07/growthSchoolAssignment/blob/main/Flow.png?raw=true)
